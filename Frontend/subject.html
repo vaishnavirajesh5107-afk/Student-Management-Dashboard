@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects & Marks | Student Portal</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="subject"><div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">S</div><div>Student Portal<small>ACADEMIC DASHBOARD</small></div></div>
+  <div class="nav-label">WORKSPACE</div>
+  <nav class="nav">
+    <a href="dashboard.html" data-nav="dashboard">▦ <span>Dashboard</span></a>
+    <a href="profile.html" data-nav="profile">◎ <span>My Profile</span></a>
+    <a href="subject.html" data-nav="subject">▤ <span>Subjects & Marks</span></a>
+    <a href="attendance.html" data-nav="attendance">◷ <span>Attendance</span></a>
+    <a href="result.html" data-nav="result">▧ <span>Semester Results</span></a>
+    <a href="schedule.html" data-nav="schedule">▦ <span>Class Schedule</span></a>
+  </nav>
+  <div class="sidebar-bottom"><div class="mini-card"><strong>Stay on track</strong><br>Review marks and attendance regularly to keep your semester goals within reach.</div></div>
+</aside>
+
+<main class="main"><header class="topbar"><div><div class="eyebrow">STUDENT PORTAL / SUBJECTS & MARKS</div><h1 class="page-title">Subjects & Marks</h1></div>
+<div class="top-actions"><button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">◐</button><button class="btn" data-logout>Log out</button><div class="user-chip"><div class="avatar" data-avatar>V</div><div><strong data-student-name>Student</strong><small data-register-no>Register number</small></div></div></div></header>
+
+<div id="subjectMessage" aria-live="polite"></div>
+<section class="card" style="margin-bottom:18px"><div class="card-heading"><div><h2>Add a Subject</h2><p>Add subject information to your semester list</p></div></div>
+<form id="addSubjectForm" class="form-grid"><div class="field"><label for="subject_code">Subject code</label><input id="subject_code" name="subject_code" placeholder="e.g. EE506"></div><div class="field"><label for="subject_name">Subject name</label><input id="subject_name" name="subject_name" required placeholder="Enter subject name"></div><div class="field"><label for="credits">Credits</label><input id="credits" name="credits" type="number" min="1" max="10" value="3" required></div><div class="field"><label for="marks">Marks (0–100)</label><input id="marks" name="marks" type="number" min="0" max="100" value="0" required></div><div class="form-actions" style="grid-column:1/-1"><button class="btn primary" type="submit">Add subject</button></div></form></section>
+<section class="card"><div class="card-heading"><div><h2>Subjects & Marks</h2><p>Edit marks and save each subject</p></div></div><div class="table-wrap"><table id="subjectsTable"><thead><tr><th>Code</th><th>Subject name</th><th>Credits</th><th>Marks (%)</th><th>Action</th></tr></thead><tbody><tr><td colspan="5">Loading…</td></tr></tbody></table></div></section>
+</main></div><script src="js/dashboard.js"></script><script src="js/subject.js"></script></body></html>

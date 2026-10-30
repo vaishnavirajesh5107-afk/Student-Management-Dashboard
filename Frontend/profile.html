@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile | Student Portal</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="profile"><div class="app-shell">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">S</div><div>Student Portal<small>ACADEMIC DASHBOARD</small></div></div>
+  <div class="nav-label">WORKSPACE</div>
+  <nav class="nav">
+    <a href="dashboard.html" data-nav="dashboard">▦ <span>Dashboard</span></a>
+    <a href="profile.html" data-nav="profile">◎ <span>My Profile</span></a>
+    <a href="subject.html" data-nav="subject">▤ <span>Subjects & Marks</span></a>
+    <a href="attendance.html" data-nav="attendance">◷ <span>Attendance</span></a>
+    <a href="result.html" data-nav="result">▧ <span>Semester Results</span></a>
+    <a href="schedule.html" data-nav="schedule">▦ <span>Class Schedule</span></a>
+  </nav>
+  <div class="sidebar-bottom"><div class="mini-card"><strong>Stay on track</strong><br>Review marks and attendance regularly to keep your semester goals within reach.</div></div>
+</aside>
+
+<main class="main"><header class="topbar"><div><div class="eyebrow">STUDENT PORTAL / MY PROFILE</div><h1 class="page-title">My Profile</h1></div>
+<div class="top-actions"><button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">◐</button><button class="btn" data-logout>Log out</button><div class="user-chip"><div class="avatar" data-avatar>V</div><div><strong data-student-name>Student</strong><small data-register-no>Register number</small></div></div></div></header>
+
+<div id="profileMessage" aria-live="polite"></div>
+<section class="grid content-grid">
+ <article class="card"><div class="card-heading"><div><h2>Student Information</h2><p>Your academic identity</p></div><div class="avatar" style="width:55px;height:55px;font-size:20px" data-avatar>V</div></div>
+ <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr));gap:18px"><div><small class="muted">Register number</small><p id="profileRegister">—</p></div><div><small class="muted">Department</small><p id="profileDepartment">—</p></div><div><small class="muted">Year</small><p id="profileYear">—</p></div><div><small class="muted">Semester</small><p id="profileSemester">—</p></div></div></article>
+ <article class="card"><div class="card-heading"><div><h2>Edit Profile</h2><p>Update your contact details</p></div></div>
+<form id="profileForm">
+  <div class="field" style="margin-bottom:14px">
+    <label for="name">Full name</label>
+    <input name="name" id="name" required>
+  </div>
+
+  <div class="field" style="margin-bottom:14px">
+    <label for="email">Email address</label>
+    <input name="email" id="email" type="email">
+  </div>
+
+  <div class="field" style="margin-bottom:14px">
+    <label for="phone">Phone number</label>
+    <input name="phone" id="phone" type="tel">
+  </div>
+
+  <div class="field" style="margin-bottom:14px">
+    <label for="year_level">Academic Year</label>
+    <select name="year_level" id="year_level">
+      <option value="I Year">I Year</option>
+      <option value="II Year">II Year</option>
+      <option value="III Year">III Year</option>
+      <option value="IV Year">IV Year</option>
+    </select>
+  </div>
+
+  <div class="field" style="margin-bottom:14px">
+    <label for="semester">Semester</label>
+    <select name="semester" id="semester">
+      <option value="Semester 1">Semester 1</option>
+      <option value="Semester 2">Semester 2</option>
+      <option value="Semester 3">Semester 3</option>
+      <option value="Semester 4">Semester 4</option>
+      <option value="Semester 5">Semester 5</option>
+      <option value="Semester 6">Semester 6</option>
+      <option value="Semester 7">Semester 7</option>
+      <option value="Semester 8">Semester 8</option>
+    </select>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn primary" type="submit">Save profile</button>
+  </div>
+</form></article>
+</section>
+</main></div><script src="js/dashboard.js"></script><script src="js/profile.js"></script></body></html>
