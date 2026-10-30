@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:5000/api";
+const API_BASE = "http://https://student-management-dashboard-1-vuwt.onrender.com/api/api";
 document.addEventListener("DOMContentLoaded",async()=>{
  const reg=localStorage.getItem("studentRegisterNo");if(!reg){location.href="login.html";return;}
  if(localStorage.getItem("dashboardTheme")==="dark")document.body.classList.add("dark");

@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:5000/api";
+const API_BASE = "http://https://student-management-dashboard-1-vuwt.onrender.com/api/api";
 const reg = localStorage.getItem("studentRegisterNo");
 const esc = v => String(v ?? "").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 async function request(path, options={}) {
