@@ -1,4 +1,4 @@
-const API_BASE = "https://student-management-dashboard-1-vuwt.onrender.com/api/api";
+const API_BASE = "https://student-management-dashboard-1-vuwt.onrender.com/api";
 
 document.addEventListener("DOMContentLoaded", async () => {
     const reg = localStorage.getItem("studentRegisterNo");
