@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:5000/api";
+const API_BASE = "https://student-management-dashboard-1-vuwt.onrender.com/api";
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#loginForm");
   if (!form) return;
