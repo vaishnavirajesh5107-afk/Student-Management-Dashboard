@@ -1,4 +1,4 @@
-const RESULT_API_BASE = "http://https://student-management-dashboard-1-vuwt.onrender.com/api/api";
+const RESULT_API_BASE = "https://student-management-dashboard-1-vuwt.onrender.com/api/api";
 const currentRegisterNo = localStorage.getItem("studentRegisterNo");
 function requireLogin(){ if(!currentRegisterNo){ window.location.href="login.html"; return false;} return true; }
 async function apiGet(path){
